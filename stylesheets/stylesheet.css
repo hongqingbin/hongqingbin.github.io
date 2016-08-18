@@ -1,5 +1,4 @@
-* {
-  box-sizing: border-box; }
+* {box-sizing: border-box; }
 
 body {
   padding: 0;
@@ -12,8 +11,7 @@ body {
 a {
   color: #1e6bb8;
   text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+  a:hover {color: #606c71;}
 
 .btn {
   display: inline-block;
@@ -243,3 +241,8 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+.riding-map{
+  width: 100%;
+  height: 100%;
+}
