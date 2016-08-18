@@ -13,7 +13,6 @@ riding.loadMap = function() {
         resizeEnable: true,
         zoom: 15
     });
-    var walking = AMap.Walking(riding.map);
 };
 
 riding.loadRidingRoutes = function() {
