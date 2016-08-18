@@ -1,2 +1,2 @@
-# hongqingbin.github.io
-山姆大叔的博客
+# Welcome to the blog of unclesam
+欢迎来到山姆大叔的博客
