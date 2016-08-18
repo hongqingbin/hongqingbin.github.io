@@ -11,7 +11,8 @@ riding.load = function() {
 riding.loadMap = function() {
 	riding.map = new AMap.Map('riding-map', {
         resizeEnable: true,
-        zoom: 15
+        zoom:11,
+        center: [116.397428, 39.90923]
     });
 };
 
