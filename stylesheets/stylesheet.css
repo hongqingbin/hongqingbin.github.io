@@ -242,6 +242,7 @@ a {
   .site-footer {
     font-size: 0.9rem; } }
 
-.riding-map{
-  height: 30rem;
+.container{
+  min-height: 30rem;
+  min-width: 40rem;
 }
