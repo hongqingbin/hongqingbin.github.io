@@ -1,30 +1,84 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html class="no-js" lang="zh-cn">
 <head>
-	<meta charset="UTF-8">
-	<title>骑者&行者</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-</head>
-<body>
-	<section class="page-header">
-		<h1 class="project-name">秀出高逼格</h1>
-		<h2 class="project-tagline">主人还没有做好装逼的准备</h2>
-	</section>
-	<div class="main-content riding-map" id="riding-map"></div>
-	<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.js"></script>
-    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=b041c09d9c43230569a0cca201f93539"></script>
-    <script type="text/javascript">
-    	window.onload = function() {
-			map.plugin(["AMap.ToolBar"], function() {
-				map.addControl(new AMap.ToolBar());
-			});
-		}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>码农&行者</title>
+    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  </head>
+  <body>
+    
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Coder&Runner</li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#">码农</a></li>
+          <li><a href="https://hongqingbin.github.io/html/fakeer.html">行者</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <div class="row columns">
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <ul class="orbit-container">
+          <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+          <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+          <li class="orbit-slide is-active">
+            <img src="http://placehold.it/1200x450">
+          </li>
+          <li class="orbit-slide">
+            <img src="http://placehold.it/1200x450">
+          </li>
+          <li class="orbit-slide">
+            <img src="http://placehold.it/1200x450">
+          </li>
+          <li class="orbit-slide">
+            <img src="http://placehold.it/1200x450">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    
+    <div class="row">
+      <div class="medium-6 large-3 columns">
+        <a href="#" class="button large hollow">开始H5的旅途</a>
+        <p>希望每天都有所收获，不虚此行。</p>
+      </div>
+      <div class="medium-6 large-3 columns">
+        <a href="#" class="button large hollow">进入JS的天堂</a>
+        <p>希望每天都有所收获，不虚此行。</p>
+      </div>
+      <div class="medium-6 large-3 columns">
+        <a href="#" class="button large hollow">NODEJS的秘密</a>
+        <p>希望每天都有所收获，不虚此行。</p>
+      </div>
+      <div class="medium-6 large-3 columns">
+        <a href="#" class="button large hollow">NGINX的故事</a>
+        <p>希望每天都有所收获，不虚此行。</p>
+      </div>
+    </div> 
+    <hr>
+    <div class="row column text-center">
+      <p>为每一行代码加上一个温暖的分号</p>
+      <p>捕获每一个可能发生的异常</p>
+      <p>添加一句简单的注释</p> 
+      <p>码农&行者</p> 
+      <p>添加一句简单的注释</p>
+      <p>捕获每一个可能发生的异常</p>
+      <p>为每一行代码加上一个温暖的分号</p>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
     </script>
-    <script type="text/javascript" src="/javascripts/app/riding.js?v=1.3"></script>
-</body>
+  </body>
 </html>
