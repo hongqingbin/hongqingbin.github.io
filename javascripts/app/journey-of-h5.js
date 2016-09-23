@@ -1,5 +1,5 @@
 function draw20() {
-    var canvas = $('#canvas-container');
+    var canvas = document.getElementById('canvas-container');
     var context = canvas.getContext("2d");
     var x = 100; //矩形开始坐标
     var y = 100; //矩形结束坐标
