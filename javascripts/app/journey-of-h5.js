@@ -1,51 +1,19 @@
-function draw20() {
+function drawCanvas() {
     var canvas = document.getElementById('canvas-container');
     var context = canvas.getContext("2d");
-    var x = 100; //矩形开始坐标
-    var y = 100; //矩形结束坐标
-    var mx = 0; //0右1左
-    var my = 0; //0下1上
-    var ml = 1; //每次移动长度
-    var w = 20; //矩形宽度
-    var h = 20; //矩形高度
-    var cw = 400; //canvas宽度
-    var ch = 300; //canvas高度
-    function move(context) {
-        context.clearRect(0, 0, 400, 300);
-        context.fillStyle = "#EEEEFF";
-        context.fillRect(0, 0, 400, 300);
-        context.fillStyle = "red";
-        context.fillRect(x, y, w, h);
-        if (mx == 0) {
-            x = x + ml;
-            if (x >= cw - w) {
-                mx = 1;
-            }
-        } else {
-            x = x - ml;
-            if (x <= 0) {
-                mx = 0;
-            }
-        }
-        if (my == 0) {
-            y = y + ml;
-            if (y >= ch - h) {
-                my = 1;
-            }
-        } else {
-            y = y - ml;
-            if (y <= 0) {
-                my = 0;
-            }
-        }
-
-    }
-
-    var interal = setInterval(function() {
-        move(context);
-    }, 1);
+    var grd = ctx.createLinearGradient(0,0,170,0);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(0.5,"blue");
+    grd.addColorStop(1,"green");
+    context.fillStyle = grd;
+    context.lineWidth = 50;
+    context.lineJoin="round";
+    context.beginPath();
+    context.arc(100,100,50,0,1.5*Math.PI);
+    context.closePath();
+    context.stroke();
 }
 
 $(function() {
-    draw20();
+    drawCanvas();
 });
