@@ -1,7 +1,7 @@
 function drawCanvas() {
     var canvas = document.getElementById('canvas-container');
     var context = canvas.getContext("2d");
-    var grd = ctx.createLinearGradient(0,0,170,0);
+    var grd = context.createLinearGradient(0,0,170,0);
     grd.addColorStop(0,"red");
     grd.addColorStop(0.5,"blue");
     grd.addColorStop(1,"green");
