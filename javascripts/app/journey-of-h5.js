@@ -12,6 +12,7 @@ function drawCanvas() {
     context.arc(100,100,50,0,1.5*Math.PI);
     context.closePath();
     context.stroke();
+    context.fill();
 }
 
 $(function() {
